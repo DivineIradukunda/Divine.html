@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<body bgcolor="red">
+	<p><h1 style="color: black;text-align: center;font-family: elephant;font-weight: bold; "> </h1>ONLINE SALES FURNITURE</p>
+	<a href="home.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">
+	home</a>
+
+	<a href="About us.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">
+	About us</a>
+	<a href="contact us.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px; ">Contact us</a>
+	<a href="Service.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">
+	Service</a>
+	<a href="Form.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px">
+	Form</a>
+	<a href="Table.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px; ">
+	Table</a>
+	<a href="My Book.html"style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px; ">
+	My Book</a>
+	</p>
+	<h1>DATABASE AND JAVA WITH ONLINE SALES FURNITURE</h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database name used: <b>onlinesalesfurniture</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b>Furniture Table</b></li>
+
+			<p>Furniture table database structure:
+This is a table which keep all needed information about products of our Business
+Those characteristics , size ,category of our product help customer to know kind of products we have and then choose what he/she wants to buy.
+</p></br>
+
+<li><b>Customer Table</b></li>
+
+			<p>Customer table database structure:
+
+This is a table which indicates the identity of customers and what product need to buy, which helps supplier to know customer and delivery his/her products where customer send Email, Names and Phone number to supplier and get his/her command. 
+.</p> </br>
+
+
+			<li><b>Command Table</b></li>
+
+			<p>Command table database structure:
+As we know When there is online Business customer visit web of that company or Business and look kind of products sold so when customer like a product and decide to buy it he/she must make or send command to Business through online and then wait for products.
+</p></br>
+
+
+            <li><b>Payment Table</b></li>
+
+			<p>Payment table database structure:
+This is table shows transactions of money paid and payment method customer used.
+As we know in Business there is Income and expenses which help Business to know it’s profit.
+</p></br>
+
+<li><b>User account Table</b></li></ol>
+
+			<p>User account table database structure:
+This is a table crated by user where user must create new account so as to get access on our system of selling online and use email and password to login.
+</p></br>
+
+<li><b>Stock Table</b></li>
+
+			<p>Stock table database structure
+For this table it shows the Quantity remain in our stock which can help in stock monitoring.
+</p> </br>
+
+<li><b>Attributes of Furniture Table</b></li></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Furniture table:</br>
+
+
+<ol type="i"><li><p><b><i>Furniture_Id:</i></b> The column which are represents  id of furniture which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Furniture table.</br></p></li>
+
+<li><p><b><i>Type:</i></b> The column which represents  the type or kind of furniture we have.</p></br></li>
+
+<li><p><b><i>Category:</i></b> The column which represents  the category of our furniture.</br></p></li>
+
+<li><p><b><i>Name:</i></b> The columns which shows the name of product or furniture.</br></p></li></li>
+
+<li><p><b><i>Size:</i></b> The columns which shows the size of furniture it can be large,small or medium.</br></p></li></ol>
+
+
+    	<li><b>Attributes of Customer Table</b></li></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Customer table:</br>
+
+
+<ol type="i"><li><p><b><i>Customer_Id:</i></b> The column which are represents  id of our customer which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Customer table.</br></p></li>
+
+<li><p><b><i>Name:</i></b> The column which represents  the name of our customer.</p></br></li>
+
+<li><p><b><i>Email:</i></b> The column which represents  the email of customer.</br></p></li>
+
+<li><p><b><i>Phone number:</i></b> The column which represents  the telephone number ofcustomer.</br></p></li>
+
+<li><p><b><i>Address:</i></b> The column which represents  the address of where customer locate.</br></p></li></ol>
+
+
+ <li><b>Attributes of Command Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Command table:</br>
+
+
+<ol type="i"><li><p><b><i>Command_Id:</i></b> The column which are represents  id of  Command which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Command table.</p></br></li>
+
+
+<li><p><b><i>Command_date:</i></b> The column which represents the date customers submit their orders.</p></br></li>
+
+<li><p><b>Status:</i></b> The column which represents the status of command it can be pending,delivered,....</p></br></li>
+
+<li><p><b><i>Furniture_Id:</i></b> The column which are represents  id of furniture which  is references to the furniture table value called FOREIGN KEY.  It is a column of furniture table  which has relationship between Command table.</p></br></li>
+
+<li><p><b><i>Customer_Id:</i></b> The column which are represents  id of customer which  is references to the customer table value called FOREIGN KEY.  It is a column of customer table  which has relationship between Command table.</p></br></li></ol> 
+
+
+ <li><b>Attributes of Payment Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Pyment table:</br>
+
+
+<ol type="i"><li><p><b><i>Payment_Id:</i></b> The column which are represents  id of Payment which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Payment table.</p></br></li>
+
+
+<li><p><b><i>Total amount:</i></b> The column which represents the amount of money customers pay for the furniture.</p></br></li>
+
+<li><p><b>Payment method:</i></b> The column which represents the method customers used to pay products like Applepay,cheque,..</p></br></li>
+
+<li><p><b><i>Date:</i></b> The column which represents Payment date.</p></br></li>
+
+<li><p><b><i>Furniture_Id:</i></b> The column which are represents  id of furniture which  is references to the furniture table value called FOREIGN KEY.  It is a column of furniture table  which has relationship between Payment table.</p></br></li>
+
+<li><p><b><i>Customer_Id:</i></b> The column which are represents  id of customer which  is references to the customer table value called FOREIGN KEY.  It is a column of customer table  which has relationship between Payment table.</p></br></li></ol> 
+
+<li><b>Attributes of User account Table</b></li></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in User account table:</br>
+
+
+<ol type="i"><li><p><b><i>User_Id:</i></b> The column which are represents  id of User which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of User account table.</br></p></li>
+
+<li><p><b><i>User name:</i></b> The column which represents  the name of user.</p></br></li>
+
+<li><p><b><i>Password:</i></b> The column which represents the password of user.</br></p></li>
+
+<li><p><b><i>Email:</i></b> The columns which shows the email of user.</br></p></li></li>
+
+<li><p><b><i>Phone number:</i></b> The columns which represents the telephone number of user or customer.</br></p></li></ol>
+
+ <li><b>Attributes of StockTable</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Stock table:</br>
+
+
+<ol type="i"><li><p><b><i>Stock_Id:</i></b> The column which are represents  id of Stock which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Stocktable.</p></br></li>
+
+
+<li><p><b><i>Address:</i></b> The column which represents the place where our stock located.</p></br></li>
+
+<li><p><b><i>Furniture_Id:</i></b> The column which are represents  id of furniture which  is references to the furniture table value called FOREIGN KEY.  It is a column of furniture table  which has relationship between Stock table.</p></br></li>
+
+<li><p><b>Quantity:</i></b> The column which represents the Quantity of our product we have in stock.</p></br></li></ol>
+
+
+
+ </ul>
+		<h2><u><li>JAVA PROGRAMMING</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+			  <b>Introduction</b><br>
+ <p>in this chapter we are going to look on how java programming language used in system and also we Describe full detail of how everything will function together with database
+that have been describe above and how it cope with full analyzed system.
+</p><br>
+ 
+	<b>Tools used to develop this system in java programming</b><br>
+
+<ol type="a"><li><p><b>Eclipse IDE:</b> we use eclipse to develop our system to Develop and test our code written in other programming language. </p><br></li>
+
+<li><p><b>•	JDK (java programming kit):</b>  is a software development environment used for developing applications and applets in Java language. It includes a range of tools such as an interpreter, a compiler, an archiver, and a documentation generator. The JDK is a crucial toolset for any programmer working in Java. </p><br></li></ol>
+
+
+
+<p><b>MySQL Connectors:</b> MySQL provides standards-based drivers for JDBC, ODBC, and .Net enabling developers to build database applications in their language.</p><br>
+
+
+
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<ol type="I"><li><b><h4>Furniture Form</h4></b></br>
+<img src="furniture.jpg" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Customer Form</h4></b></br>
+<img src="customer.jpg" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>Command Form</h4></b></br>
+<img src="command.jpg" width=900 height=300><br><br><br><br><br></li
+
+<li><b><h4>Payment Form</h4></b></br>
+<img src="payment.jpg" width=900 height=300><br><br><br><br><br>
+
+<li><b><h4>User account Form</h4></b></br>
+<img src="user account.jpg" width=900 height=300><br><br><br><br><br>
+
+<li><b><h4>Stock Form</h4></b></br>
+<img src="stock.jpg" width=900 height=300><br><br><br><br><br>
+</li></ol>
+
+</ul>
+		
+	</ol>
+	<marquee><u><i><h2 style="color: white;">Prepared By</i></u>: Divine IRADUKUNDA</h2></marquee>
+	</body>
+	</html>
+
+
+
+
+
+</body>
+</html>
